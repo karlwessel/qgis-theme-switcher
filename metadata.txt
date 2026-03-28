@@ -5,6 +5,7 @@
 [general]
 name=Theme Switcher
 qgisMinimumVersion=3.34
+qgisMaximumVersion=4.99
 description=This plugin adds a popup to easily switch between layer themes
 version=0.1.1
 author=Roel Huybrechts

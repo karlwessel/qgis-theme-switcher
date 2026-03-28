@@ -180,11 +180,11 @@ class ThemeSwitcherDialog(QtWidgets.QDialog, Translatable):
         buttonBox = QtWidgets.QDialogButtonBox(self)
         buttonBox.setOrientation(QtCore.Qt.Orientation.Horizontal)
         buttonBox.setStandardButtons(
-            QtWidgets.QDialogButtonBox.Ok | QtWidgets.QDialogButtonBox.Cancel)
+            QtWidgets.QDialogButtonBox.StandardButton.Ok | QtWidgets.QDialogButtonBox.StandardButton.Cancel)
         buttonBox.button(
-            QtWidgets.QDialogButtonBox.Ok).clicked.connect(self.close)
+            QtWidgets.QDialogButtonBox.StandardButton.Ok).clicked.connect(self.close)
         buttonBox.button(
-            QtWidgets.QDialogButtonBox.Cancel).clicked.connect(self.close)
+            QtWidgets.QDialogButtonBox.StandardButton.Cancel).clicked.connect(self.close)
         self.layout().addWidget(buttonBox)
 
         self.adjustSize()
